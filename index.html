@@ -1,0 +1,125 @@
+<!--[if lt IE 8]><script>window.location.href="error"</script><![endif]-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>知问前端</title>
+<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="cleditor/jquery.cleditor.min.js"> </script>
+<script type="text/javascript" src="js/index.js"></script>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="cleditor/jquery.cleditor.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+<noscript>JavaScript被禁用,请更换浏览器</noscript>
+<div id="header">
+    <div class="header_main">
+        <h1>知问</h1>
+        <div class="header_search">
+            <input class="search" type="text" name="search" placeholder="请输入搜索内容">
+        </div>
+        <div class="header_button">
+            <button id="search_button">查询</button>
+            <button id="question_button">提问</button>
+        </div>
+        <div class="header_member">
+            <a href="javascript:void(0)" id="reg_a">注册</a>
+            <a href="javascript:void(0)" id="member">用户名</a> |
+            <a href="javascript:void(0)" id="login_out">退出</a>
+            <a href="javascript:void(0)" id="login_in">登录</a>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <div class="main_left">
+        <div id="tabs">
+            <ul>
+                <li><a href="#show_new">新鲜出炉</a></li>
+                <li><a href="#show_hot">人气热门</a></li>
+                <li><a href="#show_distill">精华采撷</a></li>
+            </ul>
+            <div id="show_new" index="new"></div>
+            <div id="show_hot" index="hot"></div>
+            <div id="show_distill" index="distill"></div>
+        </div>
+        <div class="content"></div>
+    </div>
+    <div class="main_right">
+        <div id="accordion">
+            <h1>我的关注</h1>
+            <div>admin</div>
+            <h1>我的粉丝</h1>
+            <div>langzi</div>
+            <h1>我的提问</h1>
+            <div>谁是世界上最帅的人？</div>
+        </div>
+    </div>
+</div>
+
+<!--<input type="button" id="button" value="更新演示">-->
+
+<form id="reg">
+    <ol class="regError"></ol>
+    <p>
+        <input id="username" type="text" placeholder="注册用户名" name="username" class="text">
+        <span class="star">*</span>
+    </p>
+    <p>
+        <input id="password" type="password" placeholder="6-15位密码，区分大小写" name="password" class="text">
+        <span class="star">*</span>
+    </p>
+    <p>
+        <input id="repassword" type="password" placeholder="重复密码" name="repassword" class="text">
+        <span class="star">*</span>
+    </p>
+    <p>
+        <input id="email" type="text" placeholder="邮箱" name="email" class="text">
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label>性别: </label>
+        <input type="radio" name="sex" value="male" id="male" checked="checked"><label for="male">男</label><input type="radio" name="sex" value="female" id="female"><label for="female">女</label>
+    </p>
+    <p>
+        <input id="birthday" type="text" placeholder="生日" name="birthday" readonly="readonly" class="text">
+    </p>
+</form>
+<div id="loading"></div>
+<div id="success"></div>
+<div id="error"></div>
+<form id="login">
+    <ol class="loginError"></ol>
+    <p>
+        <input id="login_username" type="text" placeholder="注册用户名" name="username" class="text">
+        <span class="star">*</span>
+    </p>
+    <p>
+        <input id="login_password" type="password" placeholder="6-15位密码，区分大小写" name="password" class="text">
+        <span class="star">*</span>
+    </p>
+    <p>
+        <input type="checkbox" name="expires" id="expires">
+        <label for="expires">一周内自动登录</label>
+    </p>
+</form>
+<form id="question">
+    <ol class="editError"></ol>
+    <p>
+        <input type="text" placeholder="问题名称" name="title" class="text">
+        <span class="star">*</span>
+    </p>
+    <p>
+        <textarea id="editor" name="content"></textarea>
+    </p>
+</form>
+<div id="footer">
+    本程序由凌云网络提供技术支持(C)
+</div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+@CHARSET "UTF-8";
+/**
+*Filename:test
+*Author:f4ck_langzi@foxmail.com
+*Date:2016-06-05 13:00
+*/
+body{
+    margin: 40px 0 0 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 宋体;
+    background-color: #fff;
+}
+/*禁用js提示样式*/
+noscript{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 15px;
+    color: red;
+    background-color: yellow;
+}
+/*更改jQuery UI主题的对话框header背景，包括日历头*/
+.ui-widget-header{
+    background-color: #eee;
+}
+/*更改button激活背景*/
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active,a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    background-color: #ddd;
+    border: 1px solid #ddd;
+}
+.ui-icon-background, .ui-state-active .ui-icon-background{
+    border-color: #888;
+}
+
+/*更改对话框标题字体大小*/
+.ui-dialog .ui-dialog-title{
+    font-size: 14px;
+}
+/*工具提示样式修改*/
+.ui-tooltip{
+    color: #666;
+}
+/*自动补悬停全样式*/
+.ui-autocomplete,a.ui-state-focus{
+    z-index: 9999;
+}
+/*修改当天日历样式*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{
+    border: 1px solid #09d9d9;
+    color: #ffffff;
+    background-color: #09d9d9;
+}
+/*选中状态日历单元格样式*/
+.ui-datepicker-current-day a.ui-state-active{
+    background-color: #666;
+}
+/*设置日历UI中周末的样式*/
+.holiday{
+    background-color: #ffff00;
+}
+/*表单验证成功后的样式*/
+.success{
+    background: url("../img/reg_succ.png") no-repeat right;
+}
+#member,#login_out,.comment_up,.up,.load_more,#load_more_question{
+    display: none;
+}
+#header{
+    width: 100%;
+    height: 40px;
+    background: url("../img/header_bg.png");
+    position: absolute;
+    top: 0;
+}
+#header .header_main{
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+}
+#header .header_main h1{
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 10px;
+    float: left;
+}
+#header .header_main .header_search{
+    width: 30%;
+    padding: 6px 4px 0 0;
+    float: left;
+}
+#header .header_main .header_search .search{
+    width: 100%;
+    height: 24px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #666;
+    font-size: 14px;
+    text-indent: 5px;
+}
+#header .header_main .header_button{
+    padding: 5px;
+    float: left;
+}
+#header .header_main .header_member{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #444;
+}
+#header .header_main .header_member a{
+    text-decoration: none;
+    color: #444;
+}
+#reg,#login,#question{
+    width: 100%;
+    padding: 15px 0 0 15px;
+}
+#reg ol,#login ol,#question ol{
+    margin: 0 0 0 15px;
+    padding: 0;
+    color: red;
+}
+#reg ol li,#login ol li,#question ol li{
+    margin: 0;
+}
+#reg p,#login p,#question p{
+    margin: 8px 0;
+    padding: 0;
+}
+#reg p .text,#login p .text,#question p .text{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 250px;
+    height: 25px;
+    line-height: 25px;
+    text-indent: 5px;
+    color: #333;
+}
+#reg p .star,#login p .star,#question p .star{
+    display: inline-block;
+    width: 16px;
+    font-size: 15px;
+    color: red;
+}
+#login #expires~label{
+    color: #666;
+    font-size: 14px;
+}
+#loading{
+    background: url("../img/loading.gif") no-repeat 20px center;
+    line-height: 28px;
+    font-size: 14px;
+    text-indent: 50px;
+    color: #666;
+}
+#success{
+    background: url("../img/success.gif") no-repeat 20px center;
+    line-height: 28px;
+    font-size: 14px;
+    text-indent: 50px;
+    color: #666;
+}
+#error{
+    background: url("../img/error.png") no-repeat 20px center;
+    line-height: 28px;
+    font-size: 14px;
+    text-indent: 50px;
+    color: #666;
+}
+#main{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+#main .main_left{
+    width: 79%;
+    float: left;
+}
+#main .main_right{
+    width: 19%;
+    float: right;
+}
+/*#tabs{*/
+    /*border: none;*/
+/*}*/
+#ui-id-6,#ui-id-8,#ui-id-10{
+    /*border: 1px solid #ccc;*/
+    border-top: none;
+    position: relative;
+    top:-1px;
+}
+#question p input.text{
+    width: 420px;
+}
+#main .main_left h4{
+    color: #666;
+    font-weight: normal;
+}
+#main .main_left h3{
+    color: #369;
+}
+#main .main_left .editor{
+    color: #333;
+    line-height: 15px;
+    /*overflow: hidden;*/
+    /*word-break: break-all;*/
+}
+#main .main_left .bottom{
+    padding: 5px 0 0 0;
+    color: #666;
+}
+#main .main_left hr{
+    color: #ccc;
+}
+#main .main_left .up {
+    float: right;
+    color: #369;
+    cursor: pointer;
+}
+#main .main_left .down{
+    color: #369;
+    cursor: pointer;
+}
+.comment_count,.comment_up{
+    color: #369;
+    cursor: pointer;
+}
+#main .main_left .comment_list{
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+#main .main_left .comment_list .loading_comment{
+    width: 97%;
+    text-align: left;
+    border: none;
+    color: #333;
+    background: url("../img/comment_load.gif") no-repeat 50% 70%;
+}
+#main .main_left .comment_list dl{
+    margin: 0;
+    padding: 3px 10px 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+#main .main_left .comment_list dl dt{
+    color: #369;
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+#main .main_left .comment_list dl dd{
+    word-wrap: break-word;
+    word-break: break-all;
+    margin: 0;
+    color: #333;
+    line-height: 150%;
+}
+#main .main_left .comment_list dl dd.date{
+    color: #999;
+}
+#main .main_left .comment_list .load_more{
+    margin-top: 10px;
+}
+#main .main_left .comment_list textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    resize: none;
+    font-size: inherit;
+    color: #333;
+}
+#main .main_left .comment_list form input[type=button]{
+    margin: 0 0 0 785px;
+    margin-top: 2px;
+}
+#main .main_left #tabs .comment_list form input[type=button]{
+    margin: 0 0 0 745px;
+    margin-top: 2px;
+}
+#footer{
+    clear: both;
+    padding: 30px;
+    text-align: center;
+    color: #333;
+}
+
